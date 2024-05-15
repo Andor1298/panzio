@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+table{
+    margin: 0 auto;
+    color: blue;
+    background-color: rgb(201, 198, 198);
+    padding-left: 12%;
+    padding-right: 12%;
+}
+#dat{
+    margin-left: 50px;
+}
