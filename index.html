@@ -7,30 +7,76 @@
     <title>panzio</title>
 </head>
 <body>
-    <h1>
-        Panzió-szobafoglalás
-    </h1>
-    <div id="bal">
-    <p>
-        Érkezés dátuma:
 
-    </p>
-    <p>
-        Távozás dátuma:
+    <div id="hatter">
+        <h1>
+            Panzió-szobafoglalás
+        </h1>
+        <div id="bal">
+        <p>
+            Érkezés dátuma:
+    
+        </p>
+        <p>
+            Távozás dátuma:
+    
+        </p>      
+        <hr>
+        <p class="szoba">
+            Szoba típusa:
+    
+        </p>
+        <hr>
+        <p>
+            Vendégek száma:
+        </p>
+        <p>
+            Vendégek életkora:
+        </p>
+        <hr>
+        <p>
+            Ellátás:
+        </p>
+        <hr>
+        <p>
+            Fürdő szolgáltatások:
+        </p>
+        <hr>
+        <p>
+            Egyéb kérdés, kívánság:
+        </p>
+        <hr>
+        </div>
+        <div id="jobb">
+            <p>
+                <input type="date" name="dat" class="da">
 
-    </p>      
-    <p>
-        Szoba típusa:
+            </p>
+            <p>
+                <input type="date" name="dat" class="da">
 
-    </p>
+            </p>
+            
+            <input type="radio" name="rad" id="rad"> Egyágyas - 9.000 Ft/éj
+            <br>
+            <input type="radio" name="rad" id="rad"> Kétágyas - 15.000 Ft/éj
+            <br>
+            <input type="radio" name="rad" id="rad"> Kétágyas 1 pótággyal - 18.000 Ft/éj
+            <br>
+            <input type="radio" name="rad" id="rad"> Kétágyas 2 pótággyal - 21.000 Ft/éj
+            
+            
+    
+            
+    
+           
+
+        </div>
 
     </div>
-    <div id="jobb">
-        <input type="date" name="dat" id="dat">
-        <input type="date" name="dat" id="dat">
-        <input type="radio" name="rad" id="rad"> Egy ágyas- 9.000 Ft/éj
-
-    </div>
+    <button>Költségkalkuláció</button>
+    
+    <script src="index.js"></script>
     
 </body>
 </html>

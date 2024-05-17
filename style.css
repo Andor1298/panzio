@@ -2,13 +2,39 @@ h1{
     text-align: center;
     color: blue;
 }
-table{
+#hatter{
     margin: 0 auto;
     color: blue;
     background-color: rgb(201, 198, 198);
-    padding-left: 12%;
-    padding-right: 12%;
+   
+    padding-bottom: 50%;
 }
 #dat{
-    margin-left: 50px;
+    padding-right: 50%;
+}
+
+#bal{
+    float: left;
+    padding-left: 30%;
+}
+
+#jobb{
+    float: right;
+    padding-right: 35%;
+}
+
+hr{
+    width: 464%;
+}
+
+li{list-style: none;}
+
+.szoba{
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+button{
+    text-align: center;
+    margin: 0 auto;
 }
