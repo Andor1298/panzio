@@ -1,3 +1,7 @@
+body{
+    background-color: #fffff3;
+    margin: 0px;
+}
 h1{
     text-align: center;
     color: blue;
@@ -6,24 +10,36 @@ h1{
     margin: 0 auto;
     color: blue;
     background-color: rgb(201, 198, 198);
-    padding-bottom: 50%;
+    width: 700px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
 }
-#dat{
-    padding-right: 50%;
-}
-
-#bal{
-    float: left;
-    padding-left: 30%;
-}
-
-#jobb{
-    float: right;
-    padding-right: 35%;
+.dogok{
+    width: 70%;
+    display: flex;
+    border-bottom: 1px solid black;
+    align-items: center;
+    padding: 8px;
 }
 
-hr{
-    width: 464%;
+
+
+.bal{
+    width: 33%;
+}
+
+.jobb{
+    width: 65%;
+}
+.ev{
+    width: 50px;
+    margin-left: 0px;
+    margin-right: 2px;
+}
+input[type="radio"],input[type="checkbox"]{
+    margin: 4px;
 }
 
 li{list-style: none;}
@@ -34,8 +50,13 @@ li{list-style: none;}
 }
 
 button{
-    text-align: center;
     margin: 0 auto;
+    display: block;
+    margin-top: 16px;
+}
+
+#erk,#dat, select{
+    color: rgb(156, 39, 23);
 }
 
 .ev{
@@ -58,6 +79,6 @@ button{
     padding-bottom: 20%;
 }
 #doboz{
-    width: 100%;
+    width: 20%;
     height: 300%;
 }
