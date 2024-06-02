@@ -16,13 +16,13 @@
             Érkezés dátuma:
         </div>
         <div class="jobb">
-            <input type="date" name="dat" class="erk">
+            <input type="date" name="dat" id="erk">
         </div>
         <div class="bal">
             Távozás dátuma:
         </div>
         <div class="jobb">
-            <input type="date" name="dat" class="tav">
+            <input type="date" name="dat" id="tav">
             
         </div>    
         <div class="bal">
@@ -31,13 +31,13 @@
         </div>
         <div class="dogok">
             <div class="jobb">
-                <input type="radio" name="szoba" id="rad"> Egyágyas - 9.000 Ft/éj
+                <input type="radio" name="szoba" id="rad" value="1"> Egyágyas - 9.000 Ft/éj
                 <br>
-                <input type="radio" name="szoba" id="rad"> Kétágyas - 15.000 Ft/éj
+                <input type="radio" name="szoba" id="rad" value="2"> Kétágyas - 15.000 Ft/éj
                 <br>
-                <input type="radio" name="szoba" id="rad"> Kétágyas 1 pótággyal - 18.000 Ft/éj
+                <input type="radio" name="szoba" id="rad" value="3"> Kétágyas 1 pótággyal - 18.000 Ft/éj
                 <br>
-                <input type="radio" name="szoba" id="rad"> Kétágyas 2 pótággyal - 21.000 Ft/éj
+                <input type="radio" name="szoba" id="rad" value="4"> Kétágyas 2 pótággyal - 21.000 Ft/éj
                 
             </div>
 
@@ -63,10 +63,10 @@
         <div class="dogok">
 
             <div class="jobb">
-                <input type="text" name="ev" class="ev">év
-                <input type="text" name="ev" class="ev">év
-                <input type="text" name="ev" class="ev">év
-                <input type="text" name="ev" class="ev">év
+                <input type="text" name="ev" class="ev" id="ev1">év
+                <input type="text" name="ev" class="ev" id="ev2">év
+                <input type="text" name="ev" class="ev" id="ev3">év
+                <input type="text" name="ev" class="ev" id="ev4">év
         </div>
         </div>
         <div class="bal">
@@ -76,11 +76,11 @@
 
             <div class="jobb">
                 <p class="ellatasok">
-                    <input type="radio" name="kaj" id="kaj"> Reggeli - 900 Ft/nap/fő
+                    <input type="radio" name="kaj" id="reggeli" value="1"> Reggeli - 900 Ft/nap/fő
                     <br>
-                    <input type="radio" name="kaj" id="kaj"> Félpanzió - 2900 Ft/nap/fő
+                    <input type="radio" name="kaj" id="felpanzio" value="2"> Félpanzió - 2900 Ft/nap/fő
                     <br>
-                    <input type="radio" name="kaj" id="kaj"> Teljes panzió - 4.900 Ft/nap/fő
+                    <input type="radio" name="kaj" id="teljespanzio" value="3"> Teljes panzió - 4.900 Ft/nap/fő
                 </p>
     
             </div>
@@ -90,13 +90,13 @@
         </div>
         <div class="dogok">
             <div class="jobb">
-                <input type="radio" name="med" id="med"> Beltéri medencék - 800 Ft/nap/fő
+                <input type="radio" name="med" id="belteri"> Beltéri medencék - 800 Ft/nap/fő
                 <br>
-                <input type="radio" name="med" id="med"> Kültéri medencék - 800 Ft/nap/fő
+                <input type="radio" name="med" id="kulteri"> Kültéri medencék - 800 Ft/nap/fő
                 <br>
-                <input type="radio" name="med" id="med"> Szauna belépő - 800 Ft/nap/fő
+                <input type="radio" name="med" id="szauna"> Szauna belépő - 800 Ft/nap/fő
                 <br>
-                <input type="radio" name="med" id="med"> Teljes belépő - 2000 Ft/nap/fő
+                <input type="radio" name="med" id="teljes"> Teljes belépő - 2000 Ft/nap/fő
     
             </div>
 
