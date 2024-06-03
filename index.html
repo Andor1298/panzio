@@ -12,19 +12,18 @@
         Panzió-szobafoglalás
     </h1>
     <div id="hatter">
-        <div class="bal">
-            Érkezés dátuma:
+        <div class="dogok datumj" >
+
+            <div class="bal">
+                Érkezés dátuma:
+                Távozás dátuma:
+            </div>
+            <div class="jobb">
+                <input type="date" name="dat" id="erk"> <br>
+                <input type="date" name="dat" id="tav">
+            </div>
+              
         </div>
-        <div class="jobb">
-            <input type="date" name="dat" id="erk">
-        </div>
-        <div class="bal">
-            Távozás dátuma:
-        </div>
-        <div class="jobb">
-            <input type="date" name="dat" id="tav">
-            
-        </div>    
         <div class="bal">
             Szoba típusa:
             
@@ -90,23 +89,25 @@
         </div>
         <div class="dogok">
             <div class="jobb">
-                <input type="radio" name="med" id="belteri"> Beltéri medencék - 800 Ft/nap/fő
+                <input type="checkbox" name="med" id="belteri" class="med"> Beltéri medencék - 800 Ft/nap/fő
                 <br>
-                <input type="radio" name="med" id="kulteri"> Kültéri medencék - 800 Ft/nap/fő
+                <input type="checkbox" name="med" id="kulteri" class="med"> Kültéri medencék - 800 Ft/nap/fő
                 <br>
-                <input type="radio" name="med" id="szauna"> Szauna belépő - 800 Ft/nap/fő
+                <input type="checkbox" name="med" id="szauna" class="med"> Szauna belépő - 800 Ft/nap/fő
                 <br>
-                <input type="radio" name="med" id="teljes"> Teljes belépő - 2000 Ft/nap/fő
+                <input type="checkbox" name="med" id="teljes" class="med"> Teljes belépő - 2000 Ft/nap/fő
     
             </div>
 
         </div>
-        <div class="bal">
-            Egyéb kérdés, kívánság:
-        </div>
-        <div class="jobb">
-            <input type="text" name="doboz" id="doboz">
+        <div class="dogok">
 
+            <div class="bal">
+                Egyéb kérdés, kívánság:
+            </div>
+            <div class="jobb">
+                <textarea name="doboz" id="doboz"></textarea>
+            </div>
         </div>
     </div>
     <button onclick="calc()">Költségkalkuláció</button>

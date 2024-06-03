@@ -1,3 +1,4 @@
+
 body{
     background-color: #fffff3;
     margin: 0px;
@@ -33,12 +34,8 @@ h1{
 .jobb{
     width: 65%;
 }
-.ev{
-    width: 50px;
-    margin-left: 0px;
-    margin-right: 2px;
-}
-input[type="radio"],input[type="checkbox"]{
+
+#rad,.med{
     margin: 4px;
 }
 
@@ -79,6 +76,39 @@ button{
     padding-bottom: 20%;
 }
 #doboz{
-    width: 20%;
-    height: 300%;
+    margin-top: 10px;
+}
+
+.datumok{
+    border-bottom: 1px solid black;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+.datumj{
+    border-top: 1px solid black;
+
+}
+@media screen and (max-width: 725px) {
+    .dogok {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .jobb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    #hatter {
+        width: 90%;
+    }
+
+    textarea {
+        width: 90%;
+    }
 }
