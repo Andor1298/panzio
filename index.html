@@ -9,7 +9,7 @@
 <body>
 
     <h1>
-        Panzió-szobafoglalás
+        Panzió - szobafoglalás
     </h1>
     <div id="hatter">
         <div class="dogok datumj" >
@@ -24,11 +24,14 @@
             </div>
               
         </div>
-        <div class="bal">
-            Szoba típusa:
-            
-        </div>
         <div class="dogok">
+            <div class="bal">
+                <p>
+                    Szoba típusa:
+                </p> 
+            
+            </div>
+        
             <div class="jobb">
                 <input type="radio" name="szoba" id="egy" value="1">
                 <label for="egy">Egyágyas - 9.000 Ft/éj</label> <br>
@@ -43,10 +46,16 @@
             </div>
 
         </div>
-        <div class="bal">
-            Vendégek száma:
-        </div>
         <div class="dogok">
+            <div class="bal">
+                <p>
+                    Vendégek száma:
+                </p>
+                <p>
+                    Vendégek életkora: 
+                </p>
+            </div>
+        
 
             <div class="jobb">
                 <select name="vendeg" id="vendeg">
@@ -54,26 +63,18 @@
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
-                  </select>
+                </select><label for="vendeg">fő</label> <br><br>
                   
-            </div>
-        </div>
-        <div class="bal">
-            Vendégek életkora:  
-        </div>
-        <div class="dogok">
-
-            <div class="jobb">
                 <input type="text" name="ev" class="ev" id="ev1">év
                 <input type="text" name="ev" class="ev" id="ev2">év
                 <input type="text" name="ev" class="ev" id="ev3">év
                 <input type="text" name="ev" class="ev" id="ev4">év
-        </div>
-        </div>
-        <div class="bal">
-            Ellátás:
+            </div>
         </div>
         <div class="dogok">
+            <div class="bal">
+                Ellátás:
+            </div>
 
             <div class="jobb">
                 <p class="ellatasok">
@@ -87,10 +88,11 @@
     
             </div>
         </div>
-        <div class="bal">
-            Fürdő szolgáltatások:
-        </div>
         <div class="dogok">
+            <div class="bal">
+                Fürdő szolgáltatások:
+            </div>
+        
             <div class="jobb">
                 <input type="checkbox" name="med" id="belteri" class="med"> Beltéri medencék - 800 Ft/nap/fő
                 <br>
@@ -109,7 +111,7 @@
                 Egyéb kérdés, kívánság:
             </div>
             <div class="jobb">
-                <textarea name="doboz" id="doboz"></textarea>
+                <textarea name="doboz" id="doboz" cols="40" rows="5"></textarea>
             </div>
         </div>
     </div>
