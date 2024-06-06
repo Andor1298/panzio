@@ -5,6 +5,8 @@ function calc(){
     let napoksz = 0;
     let szoba = Number(document.querySelector('input[name="szoba"]:checked').value);
     let ellatas = Number(document.querySelector('input[name="kaj"]:checked').value);
+    let szobak = document.querySelector('input[name="szoba"]:checked');
+    let ellatasok = document.querySelector('input[name="kaj"]:checked');
     vendegeksz = Number(document.getElementById('vendeg').value);
 
     let belteri = document.getElementById("belteri").checked;
@@ -108,15 +110,65 @@ function calc(){
         szolgaltatas += "Szauna"
     }
 
+
+    let szobanev;
+    if (szobak== null) {
+        jo = false;
+    } else {
+        szobak= Number(szobak.value);
+        switch (szobak) {
+            case 1:
+                szobanev = "Egyágyas"
+                break;
+            case 2:
+                szobanev = "Kétágyas"
+                break;
+            case 3:
+                szobanev = "Kétágyas 1 pótággyal"
+                break;
+            case 4:
+                szobanev = "Kétágyas 2 pótággyal"
+                break;
+        }
+    }
+
+    
+    let ellatasnev;
+    if (ellatasok == null) {
+        jo = false;
+    } else {
+        ellatasok = Number(ellatasok.value);
+        switch (ellatasok) {
+            case 1:
+                ellatasnev = "Reggeli"
+                break;
+            case 2:
+                ellatasnev = "Félpanzió"
+                break;
+            case 3:
+                ellatasnev = "Teljes panzió"
+                break;
+        }
+    }
+
+
+
+
+
+
     if (jo) {
-        alert(`Kedves Vendégünk! \n\nTájékoztatjuk sikeres foglalásról \n\n
-        Érkezés: ${erk.toLocaleDateString()}\nTávozás: ${tav.toLocaleDateString()}\n
-        Szoba típusa: ${document.querySelector('input[name="szoba"]:checked').innerHTML}\n
+        alert(`Kedves Vendégünk! \n\n
+        Tájékoztatjuk sikeres foglalásról \n\n
+        Érkezés: ${erk.toLocaleDateString()}\n
+        Távozás: ${tav.toLocaleDateString()}\n
+        Szoba típusa: ${szobanev}\n
         Vendégek száma ${vendegeksz} fő\n
-        Ellátás: ${document.querySelector('input[name="kaj"]:checked').innerHTML}\n
+        Ellátás: ${ellatasnev}\n
         Igényelt szolgáltatások: ${szolgaltatas}\n
         A teljes összeg: ${osszeg} Ft.\n\n
         Köszönjük megrendelését!`)
+
+        
     } else {
         alert("legyszi jol csinald")
     }
